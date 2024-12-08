@@ -51,7 +51,7 @@ ADD resources /tmp/resources
 ARG MAPSERVER_VERSION=branch-7-6
 ADD setup.sh /setup.sh
 RUN chmod 0755 /setup.sh
-RUN /setup.sh
+RUN bash /setup.sh
 
 
 # Configure localhost in Apache
